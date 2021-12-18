@@ -1,0 +1,26 @@
+create database  chandlersdressco;
+
+use chandlersdressco;
+
+create table customer (
+id int(5) not null auto_increment,
+title varchar (5),
+custname varchar(200),
+custemail varchar(200),
+contactnumber varchar(200),
+dob varchar(12),
+country varchar(100),
+primary key (id)
+);
+
+create table rental (
+id int(5) not null auto_increment,
+repname varchar (200),
+phonenumber varchar(15),
+dresscode varchar (10),
+reservationdate varchar(12),
+paymentmethod varchar(100),
+paymentstatus varchar(100),
+custid varchar(5),
+primary key (id)
+);
